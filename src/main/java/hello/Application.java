@@ -20,7 +20,7 @@ public class Application {
 			//save a couple of customers
 			repository.save(new Customer("Jack", "Bauer"));
 			repository.save(new Customer("Chloe", "O'Brain"));
-			repository.save(new Customer("Kim", "Baucer"));
+			repository.save(new Customer("Kim", "Bauer"));
 			repository.save(new Customer("Michelle", "Dessler"));
 			
 			//fetch all customers
@@ -41,7 +41,7 @@ public class Application {
 			//fetch customers by last name
 			log.info("Customer found with findByLastName('Bauer'");
 			log.info("------------------------------------------");
-			for(Customer bauer : repository.findByLastName("Beauer")){
+			for(Customer bauer : repository.findByLastName("Bauer")){
 				log.info(bauer.toString());
 			}
 			log.info("");
